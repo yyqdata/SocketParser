@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地服务器设置(TCP):" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP: " />
+
+                <TextView
+                    android:id="@+id/server_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:text="192.168.100.120"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Port: " />
+
+                <EditText
+                    android:id="@+id/server_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="11201"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="监听"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地客户端设置:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务器IP: " />
+
+                <EditText
+                    android:id="@+id/client_server_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:hint="192.168.100.120"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Port: " />
+
+                <EditText
+                    android:id="@+id/client_server_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="11201"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送数据包: "
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/data_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心跳包" />
+
+                <CheckBox
+                    android:id="@+id/data_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XML文件" />
+
+                <CheckBox
+                    android:id="@+id/data_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大图片" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="循环发送: "
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/data_loop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="循环发送间隔: "
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/loop_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ms"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自定义消息: "
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/custom_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/custom_message_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_shape"
+                    android:ems="12"
+                    android:gravity="start"
+                    android:hint="自定义消息自定义消息自定义消息自定义消息自定义消息自定义消息自定义消息"
+                    android:padding="3dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
+
+                <Button
+                    android:id="@+id/client_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连接" />
+
+                <Button
+                    android:id="@+id/client_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="发送" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据展示:" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/data_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
