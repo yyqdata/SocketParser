@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:ems="7"
                     android:text="192.168.100.120"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -51,13 +51,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="11201"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp">
 
                 <Button
                     android:id="@+id/btn_watch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
                     android:text="监听"
                     android:textSize="14sp" />
 
@@ -84,7 +91,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="服务器IP: " />
+                    android:text="远程IP: " />
 
                 <EditText
                     android:id="@+id/client_server_ip"
@@ -92,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:ems="8"
                     android:hint="192.168.100.120"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -105,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="11201"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -118,7 +125,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="发送数据包: "
+                    android:text="发送数据: "
                     android:textSize="14sp" />
 
                 <CheckBox
@@ -131,13 +138,13 @@
                     android:id="@+id/data_xml"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="XML文件" />
+                    android:text="XML" />
 
                 <CheckBox
                     android:id="@+id/data_pic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="大图片" />
+                    android:text="图片" />
 
             </LinearLayout>
 
@@ -169,13 +176,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="1000"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" ms"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -206,7 +213,7 @@
                     android:hint="自定义消息自定义消息自定义消息自定义消息自定义消息自定义消息自定义消息"
                     android:padding="3dp"
                     android:layout_marginBottom="15dp"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
